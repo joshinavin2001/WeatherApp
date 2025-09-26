@@ -7,7 +7,7 @@ import humidity from "../assets/humidity.png";
 import rain from "../assets/rain.png";
 import snow from "../assets/snow.png";
 import wind from "../assets/wind.png";
-import { useEffect } from "react";
+import { useEffect } from "react";``
 
 const Weather = () => {
   const [weatherData, setWeatherData] = useState(false);
@@ -63,12 +63,12 @@ const Weather = () => {
   }, []);
   return (
     <>
-      <div className=" bg-linear-to-r from-zinc-500 via-stone-600 to-zinc-900 h-screen w-full flex justify-center p-[20px]">
-        <div className="bg-linear-to-r from-blue-500 via-cyan-500 to-teal-500  place-content-center p-[40px] rounded-[15px]">
+      <div className=" bg-linear-to-r from-zinc-500 via-stone-600 to-zinc-900 overflow-x-hidden items-center h-screen w-full flex justify-center px-5 py-5">
+        <div className="bg-linear-to-r from-blue-500 via-cyan-500 to-teal-500 h-110 py-4 px-5 rounded-[15px]">
           <div className="flex gap-2 ">
             <input
               ref={inputRef}
-              className="bg-white rounded-[20px] h-9 pl-[10px]"
+              className="bg-white  outline-none rounded-[20px] h-9 pl-[10px]"
               type="text"
               placeholder="Search"
             />
